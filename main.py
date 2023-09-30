@@ -10,7 +10,7 @@ screen = pygame.display.set_mode((weight,hight))
 pygame.display.set_caption('EarthCare')
 
 #Background
-background = pygame.image.load("Backgrounds/Forest/Background_forest_0.png").convert()
+background = pygame.image.load("Backgrounds/Forest/Background_forest.png").convert()
 x=0
 
 #Bucle game
