@@ -26,6 +26,8 @@ class players(pygame.sprite.Sprite):
     def __init__(self, x, y, velocidad):
         pygame.sprite.Sprite.__init__(self)
         self.velocidad = velocidad
+        self.direction = 1
+        self.flip = False
         quieto = pygame.image.load('Resourses/Characters/Personaje_H.png')
         self.scale = pygame.transform.scale(quieto, (int(quieto.get_width()), int(quieto.get_height())))
         self.rect = quieto.get_rect()
@@ -39,14 +41,18 @@ class players(pygame.sprite.Sprite):
         #Assign movement variables if moving left or right
         if izquierda:
             dx = -self.velocidad
+            self.flip = True
+            self.direction = -1
         if derecha:
             dx = self.velocidad
+            self.flip = False
+            self.direction = 1
 
         #Update rectangle position
         self.rect.x += dx
         self.rect.y += dy
     def draw(self):
-        screen.blit(self.scale, self.rect)
+        screen.blit(pygame.transform.flip(self.scale, self.flip, False), self.rect)
 
 player_h = players(200,650,4)
 
