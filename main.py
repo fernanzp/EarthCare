@@ -18,9 +18,6 @@ fps = 60
 background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert() #Creamos el fondo
 x=0
 
-'''#Personajes
-quieto = pygame.image.load('Resourses/Characters/Personaje_H.png')'''
-
 #Datos personajes
 class players(pygame.sprite.Sprite):
     def __init__(self, x, y, velocidad):
@@ -76,6 +73,10 @@ while run:
                 izquierda =True
             if event.key == pygame.K_d:
                 derecha = True
+            if event.key == pygame.K_LEFT:
+                izquierda = True
+            if event.key == pygame.K_RIGHT:
+                derecha = True
             if event.key == pygame.K_ESCAPE:
                 run = False
 
@@ -84,6 +85,10 @@ while run:
             if event.key == pygame.K_a:
                 izquierda = False
             if event.key == pygame.K_d:
+                derecha = False
+            if event.key == pygame.K_LEFT:
+                izquierda = False
+            if event.key == pygame.K_RIGHT:
                 derecha = False
 
     #Fondo movimiento
