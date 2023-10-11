@@ -108,5 +108,10 @@ class Level:
         self.player.draw(self.display_surface)
 
         #Trash
+        trash_collisions = pygame.sprite.groupcollide(self.trash_group, self.tiles, False, False)
+        for trash, tile_list in trash_collisions.items():
+            for tile in tile_list:
+                trash.velocity_y = 0
+
         self.trash_group.update()
         self.trash_group.draw(self.display_surface)

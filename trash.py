@@ -8,6 +8,7 @@ class Trash(pygame.sprite.Sprite):
         self.image = pygame.transform.scale(self.image, (90, 90))
         self.rect = self.image.get_rect()
         self.reset()
+        #self.tiles = tiles
 
     def reset(self):
         self.rect.x = random.randrange(1280 - self.rect.width)
@@ -18,3 +19,8 @@ class Trash(pygame.sprite.Sprite):
         self.rect.y += self.velocity_y
         if self.rect.top > 720:
             self.reset()
+
+        #Collisions
+        '''collisions = pygame.sprite.spritecollide(self, self.tiles, False)
+        for tile in collisions:
+            self.velocity_y = 0'''
