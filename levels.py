@@ -1,5 +1,5 @@
 import pygame
-from tiles import Tile
+from tiles import Tile, Tile_1
 from settings import tile_size, weight, height
 from players import Players
 from trash import Trash
@@ -10,6 +10,7 @@ class Level:
         self.setup_level(level_data)
         self.world_shift = 0
         self.current_x = 0
+        self.trash_collected = 0 #Contador
 
         #Background
         self.background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert()
@@ -36,6 +37,9 @@ class Level:
                 if cell == 'P':
                     player_sprite = Players((x, y))
                     self.player.add(player_sprite)
+                if cell == 'Y':
+                    tile_1 = Tile_1((x,y),tile_size)
+                    self.tiles.add(tile_1)
 
     def scroll_x(self):
         player = self.player.sprite
@@ -115,3 +119,17 @@ class Level:
 
         self.trash_group.update()
         self.trash_group.draw(self.display_surface)
+
+        #Trash collide with Player
+        trash_collisions = pygame.sprite.groupcollide(self.trash_group, self.player, True, False)
+        for trash, player_list in trash_collisions.items():
+            trash.kill()
+            self.trash_collected += 1 #Sumamos 1 al contador
+
+        #Contador
+        font = pygame.font.Font(None, 36)
+        text = font.render(f"{self.trash_collected}/30",True, (255,255,255))
+
+        self.display_surface.blit(text, (190, 10))
+        #self.trash_group.update()
+        #self.trash_group.draw(self.display_surface)
