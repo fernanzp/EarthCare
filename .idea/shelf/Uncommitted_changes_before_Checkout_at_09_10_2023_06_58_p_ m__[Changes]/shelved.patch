@@ -1,0 +1,167 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pygame, sys\r\nfrom pygame.locals import *\r\n\r\n#Iniciación de pygame\r\npygame.init()\r\n\r\n#Creamos la pantalla\r\nweight, hight = 1280,720 #Variables para definir el ancho y el alto de la pantalla\r\nscreen = pygame.display.set_mode((weight,hight))\r\npygame.display.set_caption('EarthCare') #Nombre del juego\r\nrun = True\r\n\r\n#set framerate\r\nclock = pygame.time.Clock()\r\nfps = 60\r\n\r\n#Background\r\nbackground = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert() #Creamos el fondo\r\nx=0\r\n\r\n#Datos personajes\r\nclass players(pygame.sprite.Sprite):\r\n    def __init__(self, x, y, velocidad):\r\n        pygame.sprite.Sprite.__init__(self)\r\n        self.velocidad = velocidad\r\n        self.direction = 1\r\n        self.flip = False\r\n        quieto = pygame.image.load('Resourses/Characters/Personaje_H.png')\r\n        self.scale = pygame.transform.scale(quieto, (int(quieto.get_width()), int(quieto.get_height())))\r\n        self.rect = quieto.get_rect()\r\n        self.rect.center = (x, y)\r\n\r\n    def move(self, izquierda, derecha):\r\n        #Reset movement variables\r\n        dx = 0\r\n        dy = 0\r\n\r\n        #Assign movement variables if moving left or right\r\n        if izquierda:\r\n            dx = -self.velocidad\r\n            self.flip = True\r\n            self.direction = -1\r\n        if derecha:\r\n            dx = self.velocidad\r\n            self.flip = False\r\n            self.direction = 1\r\n\r\n        #Update rectangle position\r\n        self.rect.x += dx\r\n        self.rect.y += dy\r\n    def draw(self):\r\n        screen.blit(pygame.transform.flip(self.scale, self.flip, False), self.rect)\r\n\r\nplayer_h = players(200,650,4)\r\n\r\n#Definimos las variables de accion de los player\r\nizquierda = False\r\nderecha = False\r\n\r\n#Bucle game\r\nwhile run:\r\n    clock.tick(fps)\r\n    for event in pygame.event.get():\r\n        #Quit game\r\n        if event.type == QUIT:\r\n            run = False\r\n            pygame.quit()\r\n            sys.exit()\r\n\r\n        #Keyboard presses\r\n        if event.type == pygame.KEYDOWN:\r\n            if event.key == pygame.K_a:\r\n                izquierda =True\r\n            if event.key == pygame.K_d:\r\n                derecha = True\r\n            if event.key == pygame.K_LEFT:\r\n                izquierda = True\r\n            if event.key == pygame.K_RIGHT:\r\n                derecha = True\r\n            if event.key == pygame.K_ESCAPE:\r\n                run = False\r\n\r\n        #Keyboard button release\r\n        if event.type == pygame.KEYUP:\r\n            if event.key == pygame.K_a:\r\n                izquierda = False\r\n            if event.key == pygame.K_d:\r\n                derecha = False\r\n            if event.key == pygame.K_LEFT:\r\n                izquierda = False\r\n            if event.key == pygame.K_RIGHT:\r\n                derecha = False\r\n\r\n    #Fondo movimiento\r\n    x_relativa = x % background.get_rect().width\r\n    screen.blit(background, (x_relativa - background.get_rect().width, 0))\r\n    if x_relativa < weight:\r\n        screen.blit(background,(x_relativa,0))\r\n    x -= 1\r\n\r\n    player_h.draw()\r\n    player_h.move(izquierda, derecha)\r\n\r\n    pygame.display.update()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	
++++ b/main.py	
+@@ -1,104 +1,20 @@
+ import pygame, sys
+-from pygame.locals import *
++from Settings import *
+ 
+-#Iniciación de pygame
+ pygame.init()
+ 
+ #Creamos la pantalla
+-weight, hight = 1280,720 #Variables para definir el ancho y el alto de la pantalla
+-screen = pygame.display.set_mode((weight,hight))
+-pygame.display.set_caption('EarthCare') #Nombre del juego
+-run = True
+-
+-#set framerate
++weight, height = 1280, 720 #Variable para definir el alto y ancho de la pantalla
++screen = pygame.display.set_mode((weight,height)) #Pantalla
++pygame.display.set_caption('EarthCare') #Nombre del videojuego
+ clock = pygame.time.Clock()
+-fps = 60
+-
+-#Background
+-background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert() #Creamos el fondo
+-x=0
+-
+-#Datos personajes
+-class players(pygame.sprite.Sprite):
+-    def __init__(self, x, y, velocidad):
+-        pygame.sprite.Sprite.__init__(self)
+-        self.velocidad = velocidad
+-        self.direction = 1
+-        self.flip = False
+-        quieto = pygame.image.load('Resourses/Characters/Personaje_H.png')
+-        self.scale = pygame.transform.scale(quieto, (int(quieto.get_width()), int(quieto.get_height())))
+-        self.rect = quieto.get_rect()
+-        self.rect.center = (x, y)
+-
+-    def move(self, izquierda, derecha):
+-        #Reset movement variables
+-        dx = 0
+-        dy = 0
+ 
+-        #Assign movement variables if moving left or right
+-        if izquierda:
+-            dx = -self.velocidad
+-            self.flip = True
+-            self.direction = -1
+-        if derecha:
+-            dx = self.velocidad
+-            self.flip = False
+-            self.direction = 1
+-
+-        #Update rectangle position
+-        self.rect.x += dx
+-        self.rect.y += dy
+-    def draw(self):
+-        screen.blit(pygame.transform.flip(self.scale, self.flip, False), self.rect)
+-
+-player_h = players(200,650,4)
+-
+-#Definimos las variables de accion de los player
+-izquierda = False
+-derecha = False
+-
+-#Bucle game
+-while run:
+-    clock.tick(fps)
++while True:
+     for event in pygame.event.get():
+-        #Quit game
+-        if event.type == QUIT:
+-            run = False
++        if event.type == pygame.QUIT:
+             pygame.quit()
+             sys.exit()
+-
+-        #Keyboard presses
+-        if event.type == pygame.KEYDOWN:
+-            if event.key == pygame.K_a:
+-                izquierda =True
+-            if event.key == pygame.K_d:
+-                derecha = True
+-            if event.key == pygame.K_LEFT:
+-                izquierda = True
+-            if event.key == pygame.K_RIGHT:
+-                derecha = True
+-            if event.key == pygame.K_ESCAPE:
+-                run = False
+-
+-        #Keyboard button release
+-        if event.type == pygame.KEYUP:
+-            if event.key == pygame.K_a:
+-                izquierda = False
+-            if event.key == pygame.K_d:
+-                derecha = False
+-            if event.key == pygame.K_LEFT:
+-                izquierda = False
+-            if event.key == pygame.K_RIGHT:
+-                derecha = False
+-
+-    #Fondo movimiento
+-    x_relativa = x % background.get_rect().width
+-    screen.blit(background, (x_relativa - background.get_rect().width, 0))
+-    if x_relativa < weight:
+-        screen.blit(background,(x_relativa,0))
+-    x -= 1
++    screen.fill('black')
+ 
+-    player_h.draw()
+-    player_h.move(izquierda, derecha)
+-
+-    pygame.display.update()
+\ No newline at end of file
++    pygame.display.update()
++    clock.tick(60)
+\ No newline at end of file
+Index: Settings.py
+===================================================================
+diff --git a/Settings.py b/Settings.py
+new file mode 100644
+--- /dev/null	
++++ b/Settings.py	
+@@ -0,0 +1,18 @@
++forest_map = [
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'                           ',
++'XXXXXXXXXXXXXXXXXXXXXXXXXXX']
++
++tile_size = 50
++weight, height = 1280, len(forest_map) * tile_size
+\ No newline at end of file
+Index: Tile.py
+===================================================================
+diff --git a/Tile.py b/Tile.py
+new file mode 100644
+--- /dev/null	
++++ b/Tile.py	
+@@ -0,0 +1,7 @@
++import pygame
++
++class Tile(pygame.sprite.Sprite):
++    def __init__(self, pos, size):
++        super().__init__()
++        self.image = pygame.Surface((size, size))
++        self.rect = self.image.get_rect(topleft = pos)
+\ No newline at end of file

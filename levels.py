@@ -128,7 +128,7 @@ class Level:
 
         #Contador
         font = pygame.font.Font(None, 36)
-        text = font.render(f"{self.trash_collected}/30",True, (255,255,255))
+        text = font.render(f"{self.trash_collected}/20",True, (255,255,255))
 
         self.display_surface.blit(text, (190, 10))
         #self.trash_group.update()
