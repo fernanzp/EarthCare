@@ -1,4 +1,4 @@
-import pygame
+import pygame.mixer, sys
 from tiles import Tile, Tile_1
 from settings import tile_size, weight, height
 from players import Players
@@ -16,9 +16,15 @@ class Level:
         self.background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert()
         self.background = pygame.transform.scale(self.background, (weight, height))
 
+        #Music
+        pygame.mixer.init()
+        pygame.mixer.music.load('Resourses/sfx/forest_level_sound.wav')
+        pygame.mixer.music.play(-1)
+        pygame.mixer.music.set_volume(0.5)
+
         #Sprite group for Trash
         self.trash_group = pygame.sprite.Group()
-        for x in range(5):
+        for x in range(40):
             trash = Trash()
             self.trash_group.add(trash)
 
@@ -125,6 +131,11 @@ class Level:
         for trash, player_list in trash_collisions.items():
             trash.kill()
             self.trash_collected += 1 #Sumamos 1 al contador
+
+        #Verificamos si el contador llega a 20
+        if self.trash_collected >= 20:
+            pygame.quit()
+            sys.exit()
 
         #Contador
         font = pygame.font.Font(None, 36)
