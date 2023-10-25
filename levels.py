@@ -1,4 +1,4 @@
-import pygame.mixer, sys
+import pygame.mixer, sys, random
 from tiles import Tile, Tile_1
 from settings import tile_size, weight, height
 from players import Players
@@ -11,6 +11,10 @@ class Level:
         self.world_shift = 0
         self.current_x = 0
         self.trash_collected = 0 #Contador
+        #Temporizador para la generación de basura
+        self.last_trash_time = 0
+        self.trash_spawn_inverval_min = 2000
+        self.trash_spawn_inverval_max = 3000
 
         #Background
         self.background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert()
@@ -24,7 +28,7 @@ class Level:
 
         #Sprite group for Trash
         self.trash_group = pygame.sprite.Group()
-        for x in range(40):
+        for x in range(5):
             trash = Trash()
             self.trash_group.add(trash)
 
@@ -102,6 +106,11 @@ class Level:
         if player.on_ceiling and player.direction.y > 0:
             player.on_ceiling = False
 
+    def generate_new_trash(self):
+        for _ in range(5):
+            trash = Trash()
+            self.trash_group.add(trash)
+
     def run(self):
         #Background
         self.display_surface.blit(self.background, (0,0))
@@ -116,6 +125,13 @@ class Level:
         self.horizontal_movement_collision()
         self.vertical_movement_collision()
         self.player.draw(self.display_surface)
+
+        #Time
+        current_time = pygame.time.get_ticks()
+        random_interval = random.randint(self.trash_spawn_inverval_min, self.trash_spawn_inverval_max)
+        if current_time - self.last_trash_time >= random_interval:
+            self.generate_new_trash()
+            self.last_trash_time = current_time
 
         #Trash
         trash_collisions = pygame.sprite.groupcollide(self.trash_group, self.tiles, False, False)
