@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose/Win.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/defeat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
+    <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="Fix an error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/levels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "EarthCare2",
+    "git-widget-placeholder": "3c71aa32",
     "last_opened_file_path": "/home/fernanzp/PycharmProjects/EarthCare/Resourses/Backgrounds/Win_lose"
   }
 }]]></component>
@@ -167,13 +163,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697506091389</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit to be able to return to a previous commit">
+      <option name="closed" value="true" />
+      <created>1699038372379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699038372379</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add player and movement" />
     <MESSAGE value="Add the trash collected and fix some problems" />
     <MESSAGE value="Add sound to the level and create the condition to win" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sound to the level and create the condition to win" />
+    <MESSAGE value="commit to be able to return to a previous commit" />
+    <MESSAGE value="Fix an error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix an error" />
   </component>
 </project>

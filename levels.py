@@ -61,9 +61,15 @@ class Level:
         if player_x < weight/4 and direction_x < 0:
             self.world_shift = 3
             player.speed = 0
+            for trash in self.trash_group:
+                trash.rect.x += 3
+
         elif player_x > weight - (weight/4) and direction_x > 0:
             self.world_shift = -3
             player.speed = 0
+            for trash in self.trash_group:
+                trash.rect.x += -3
+
         else:
             self.world_shift = 0
             player.speed = 3
