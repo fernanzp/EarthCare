@@ -3,6 +3,8 @@ from tiles import Tile, Tile_1
 from settings import tile_size, weight, height
 from players import Players
 from trash import Trash
+from victory import VictoryScreen
+from defeat import DefeatScreen
 
 class Level:
     def __init__(self, level_data, surface):
@@ -17,7 +19,7 @@ class Level:
         self.trash_spawn_inverval_max = 3000
 
         #Background
-        self.background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert()
+        self.background = pygame.image.load('Resourses/Backgrounds/Forest/Background_forest.png').convert() 
         self.background = pygame.transform.scale(self.background, (weight, height))
 
         #Music
@@ -150,6 +152,24 @@ class Level:
 
         #Verificamos si el contador llega a 20
         if self.trash_collected >= 20:
+            victory_screen = VictoryScreen(self.display_surface, weight, height)
+            victory_screen.run()
+            pygame.quit()
+            sys.exit()
+
+        #Verify the collision between trash and tiles
+        trash_tile_collisions = pygame.sprite.groupcollide(self.trash_group, self.tiles, False, False)
+
+        #Count the trashes that are on the ground
+        trash_on_floor = 0
+        for trash, tile_list in trash_tile_collisions.items():
+            if any(tile.rect.colliderect(trash.rect) for tile in tile_list):
+                trash_on_floor += 1
+
+        #If there are at least 30 trash on the ground, close the game
+        if trash_on_floor >= 40:
+            defeat_screen = DefeatScreen(self.display_surface, weight, height)
+            defeat_screen.run()
             pygame.quit()
             sys.exit()
 
