@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="Fix an error">
+    <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/green_counter_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/red_counter_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Menu_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Retry_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Shop_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/flower_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Titles/Defeat_title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Titles/Victory_title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defeat.py" beforeDir="false" afterPath="$PROJECT_DIR$/defeat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "3c71aa32",
-    "last_opened_file_path": "/home/fernanzp/PycharmProjects/EarthCare/Resourses/Backgrounds/Win_lose"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;7a6c80c4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fernanzp/PycharmProjects/EarthCare/Resourses/Buttons&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose" />
-      <recent name="$PROJECT_DIR$/Resourses/Trash" />
+      <recent name="$PROJECT_DIR$/Resourses/Buttons" />
+      <recent name="$PROJECT_DIR$/Resourses/Titles" />
       <recent name="$PROJECT_DIR$/Resourses/Tiles" />
-      <recent name="$PROJECT_DIR$/Tiles" />
-      <recent name="$PROJECT_DIR$/Resourses/Characters/Male/run" />
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Counters" />
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Resourses" />
@@ -171,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699038372379</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix an error">
+      <option name="closed" value="true" />
+      <created>1699045252643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699045252643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

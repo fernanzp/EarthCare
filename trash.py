@@ -23,7 +23,7 @@ class Trash(pygame.sprite.Sprite):
         #self.tiles = tiles
 
     def reset(self):
-        self.rect.x = random.randrange(1280 - self.rect.width)
+        self.rect.x = random.randrange(2000 - self.rect.width)
         self.rect.y = -self.rect.width
         self.velocity_y = random.randrange(2, 4)
 
