@@ -7,7 +7,7 @@ class Menu:
         self.SCREEN = pygame.display.set_mode((1280, 720))
         pygame.display.set_caption("Menu")
         self.BG = pygame.image.load("../EarthCare/Resourses/Backgrounds/Menu/Menu_background.png")
-        self.play_button_pressed = False
+        self.button_pressed = None
 
     def get_font(self, size):
         return pygame.font.Font("../EarthCare/Resourses/Fonts/font.ttf", size)
@@ -132,8 +132,10 @@ class Menu:
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if LEVEL1_BUTTON.checkForInput(MENU_MOUSE_POS):
-                        pygame.quit()
-                        sys.exit()
+                        print("Selected level: level1")
+                        return "level1"
+                        #pygame.quit()
+                        #sys.exit()
                     if LEVEL2_BUTTON.checkForInput(MENU_MOUSE_POS):
                         pygame.quit()
                         sys.exit()
@@ -418,15 +420,19 @@ class Menu:
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if PLAY_BUTTON.checkForInput(MENU_MOUSE_POS):
-                        self.opciones_play()
-                        self.play_button_pressed = True
+                        self.button_pressed = "play"
                         return
+                        #self.opciones_play()
                         #self.play()
                     if OPTIONS_BUTTON.checkForInput(MENU_MOUSE_POS):
+                        self.button_pressed = "options"
+                        return
                         #menu_opcions()
-                        self.menu_opciones()
+                        #self.menu_opciones()
                     if SHOP_BUTTON.checkForInput(MENU_MOUSE_POS):
-                        self.menu_shop()
+                        self.button_pressed = "shop"
+                        return
+                        #self.menu_shop()
                     if QUIT_BUTTON.checkForInput(MENU_MOUSE_POS):
                         pygame.quit()
                         sys.exit()

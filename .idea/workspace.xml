@@ -5,39 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/City/Background_city.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Menu/Menu_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Green_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/NoSound_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Red_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Sound_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Flags/EUA_flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Flags/Mex_flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Fonts/font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Rects/Options Rect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Rects/Play Rect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Rects/Quit Rect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/sfx/inicio.mpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beach_hard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buttons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/city_easy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/city_hard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_easy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu_easy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu_hard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opciones_play.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/options.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/green_counter_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/green_counter_background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/red_counter_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/red_counter_background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Apple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Bannana.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Bannana.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Bottle1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Bottle1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Bottle2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Bottle2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Can1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Can1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Can2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Can2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_hard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_easy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +49,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "552abc02",
+    "git-widget-placeholder": "ee4a1d6e",
     "last_opened_file_path": "/home/fernanzp/PycharmProjects/menu2"
   }
 }]]></component>
@@ -118,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="players" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="menu_easy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EarthCare" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +104,49 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/players.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menu_easy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="opciones_play" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EarthCare" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/opciones_play.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="options" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EarthCare" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/options.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,10 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.opciones_play" />
+        <item itemvalue="Python.menu_easy" />
+        <item itemvalue="Python.options" />
         <item itemvalue="Python.victory" />
-        <item itemvalue="Python.players" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.players" />
       </list>
     </recent_temporary>
   </component>
