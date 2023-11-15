@@ -5,21 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/green_counter_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/red_counter_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Menu_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Retry_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Shop_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/flower_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Titles/Defeat_title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Titles/Victory_title.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/City/Background_city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Menu/Menu_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Green_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/NoSound_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Red_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Sound_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Flags/EUA_flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Flags/Mex_flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Fonts/font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Rects/Options Rect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Rects/Play Rect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Rects/Quit Rect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/sfx/inicio.mpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beach_hard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buttons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/city_easy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/city_hard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_easy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/defeat.py" beforeDir="false" afterPath="$PROJECT_DIR$/defeat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/green_counter_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/green_counter_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/red_counter_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Counters/red_counter_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Apple.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Apple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Bannana.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Bannana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Bottle1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Bottle1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Bottle2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Bottle2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Can1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Can1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Trash/Can2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Trash/Can2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,26 +71,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;7a6c80c4&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fernanzp/PycharmProjects/EarthCare/Resourses/Buttons&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "552abc02",
+    "last_opened_file_path": "/home/fernanzp/PycharmProjects/menu2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/City" />
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Counters" />
       <recent name="$PROJECT_DIR$/Resourses/Buttons" />
       <recent name="$PROJECT_DIR$/Resourses/Titles" />
       <recent name="$PROJECT_DIR$/Resourses/Tiles" />
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Counters" />
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Resourses" />
-      <recent name="$PROJECT_DIR$/Resourses/Characters/Male/idle" />
-      <recent name="$PROJECT_DIR$/Resourses/Characters/Male" />
+      <recent name="$PROJECT_DIR$/Resourses/Buttons" />
+      <recent name="$PROJECT_DIR$/Resourses/Flags" />
+      <recent name="$PROJECT_DIR$/Resourses/NoSound_button" />
+      <recent name="$PROJECT_DIR$/Resourses/Sound_button" />
+      <recent name="$PROJECT_DIR$/Resourses/sfx" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -193,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699045252643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add buttons and the second level">
+      <option name="closed" value="true" />
+      <created>1699226166736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699226166736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,6 +229,7 @@
     <MESSAGE value="Add sound to the level and create the condition to win" />
     <MESSAGE value="commit to be able to return to a previous commit" />
     <MESSAGE value="Fix an error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix an error" />
+    <MESSAGE value="Add buttons and the second level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add buttons and the second level" />
   </component>
 </project>
