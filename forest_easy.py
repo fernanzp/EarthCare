@@ -1,4 +1,6 @@
 import pygame.mixer, sys, random
+
+import defeat
 from tiles import Tile, Tile_1#, Flower_0
 from settings import tile_size, weight, height
 from players import Players
@@ -14,6 +16,8 @@ class Level_f_1:
         self.current_x = 0
         self.trash_collected = 0 #Contador
         self.victory = False
+        self.opc = None
+        self.victory_sound = None
 
         #Counters by type
         self.organic = 0
@@ -34,17 +38,15 @@ class Level_f_1:
         self.green_counter_backgound = pygame.image.load('Resourses/Backgrounds/Counters/green_counter_background.png').convert_alpha()
         self.red_counter_backgound = pygame.image.load('Resourses/Backgrounds/Counters/red_counter_background.png').convert_alpha()
 
-        #Music
-        '''pygame.mixer.init()
-        forest_sound = pygame.mixer.Sound('Resourses/sfx/forest_level_sound.wav')
-        forest_sound.play(-1)
-        pygame.mixer.music.set_volume(0.5)'''
-
         #Sprite group for Trash
         self.trash_group = pygame.sprite.Group()
         for x in range(8):
             trash = Trash()
             self.trash_group.add(trash)
+
+        #Sounds
+        self.victory_sound = pygame.mixer.Sound('Resourses/sfx/Victory_defeat/victory.wav')
+        self.defeat_sound = pygame.mixer.Sound('Resourses/sfx/Victory_defeat/defeat.wav')
 
     def get_font(self, size):
         return pygame.font.Font("../EarthCare/Resourses/Fonts/font.ttf", size)
@@ -67,9 +69,6 @@ class Level_f_1:
                 if cell == 'Y':
                     tile_1 = Tile_1((x,y),tile_size)
                     self.tiles.add(tile_1)
-                '''if cell == 'W':
-                    flower_0 = Flower_0((x, y), tile_size)
-                    self.tiles.add(flower_0)'''
 
     def scroll_x(self):
         player = self.player.sprite
@@ -137,6 +136,20 @@ class Level_f_1:
             trash = Trash()
             self.trash_group.add(trash)
 
+    def reset(self):
+        player_sprite = Players((625, 670))
+        self.player.empty()
+        self.player.add(player_sprite)
+
+        self.trash_collected = 0
+        self.trash_group.empty()
+
+        #self.organic = 0
+        #self.glass = 0
+        #self.metal = 0
+        #self.paper = 0
+        #self.last_trash_time = 0
+
     def run(self):
         #Background
         self.display_surface.blit(self.background, (0,0))
@@ -187,12 +200,15 @@ class Level_f_1:
             elif trash.image_file in ['Box.png', 'News.png']:
                 self.paper += 1
 
-        #Verificamos si el contador llega a 20
-        if self.trash_collected >= 5:
+        #Verify if the counter reaches 50
+        if self.trash_collected >= 50:
+            self.victory_sound.play()
+            self.reset()
             victory_screen = VictoryScreen(self.display_surface, weight, height, self.organic, self.glass, self.metal, self.paper)
             victory_screen.run()
-            pygame.quit()
-            sys.exit()
+
+            self.opc = victory_screen.button_pressed
+            return
 
         #Verify the collision between trash and tiles
         trash_tile_collisions = pygame.sprite.groupcollide(self.trash_group, self.tiles, False, False)
@@ -203,20 +219,20 @@ class Level_f_1:
             if any(tile.rect.colliderect(trash.rect) for tile in tile_list):
                 trash_on_floor += 1
 
-        #If there are at least 30 trash on the ground, close the game
+        #If there are at least 55 trash on the ground, close the game
         if trash_on_floor >= 55:
+            self.defeat_sound.play()
+            self.reset()
             defeat_screen = DefeatScreen(self.display_surface, weight, height)
             defeat_screen.run()
-            pygame.quit()
-            sys.exit()
+
+            self.opc = defeat_screen.button_pressed
+            return
 
         #Trash collected counter
-        #font = pygame.font.Font(None, 46)
         text_trash_collected = self.get_font(18).render(f"{self.trash_collected}/50",True, (255,255,255))
         #Trash on the ground counter
         text_trash_on_ground = self.get_font(18).render(f"{trash_on_floor}/55", True, (255,255,255))
 
         self.display_surface.blit(text_trash_collected, (15, 21))
         self.display_surface.blit(text_trash_on_ground, (1175, 21))
-        #self.trash_group.update()
-        #self.trash_group.draw(self.display_surface)

@@ -50,6 +50,54 @@ city_map = [
 'X       XX  P     YXX          Y       X',
 'XYYYYYYYXXYYYYYYYYXXXYYYYYYYYYYXYYYYYYYX']
 
+city_map_hard= [
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'           YY  YYYYY                    ',
+'                                        ',
+'        YY            YYYYYYY           ',
+'                                        ',
+'Y                  Y            YY     Y',
+'X                 YX                   X',
+'X           P    YXX        YY         X',
+'XYYYYYYYYYYYYYYYYXXXYYYYYYYYXXYYYYYYYYYX']
+
+beach_map= [
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                          YYY           ',
+'                                        ',
+'                   YYYYY                ',
+'Y    YY                          YYY   Y',
+'Y               Y                      Y',
+'Y       YY  P  YY            YY        Y',
+'YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY']
+
+beach_map_hard= [
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'                                        ',
+'           YYYYY       YYY              ',
+'Y                            YYY       Y',
+'Y       Y            Y                 Y',
+'Y       Y   P       YY                 Y',
+'YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY ']
+
 '''= [
 '                                        ',
 '                                        ',

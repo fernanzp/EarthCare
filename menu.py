@@ -63,6 +63,7 @@ class Menu:
 
             pygame.display.update()'''
 
+
     def opciones_play(self):
         while True:
             self.SCREEN.blit(self.BG, (0, 0))
@@ -357,6 +358,7 @@ class Menu:
 
             pygame.display.update()
 
+
     def menu_shop(self):
         while True:
             self.SCREEN.blit(self.BG, (0 ,0))
@@ -396,17 +398,17 @@ class Menu:
 
             MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-            MENU_TEXT = self.get_font(100).render("MAIN MENU", True, "#b68f40")
+            MENU_TEXT = self.get_font(100).render("MENU", True, "#b68f40")
             MENU_RECT = MENU_TEXT.get_rect(center=(640, 100))
 
-            PLAY_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Rects/Play Rect.png"), pos=(640, 250),
-                                text_input="PLAY", font=self.get_font(75), base_color="#d7fcd4", hovering_color="White")
-            OPTIONS_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Rects/Options Rect.png"), pos=(640, 400),
-                                    text_input="OPTIONS", font=self.get_font(75), base_color="#d7fcd4", hovering_color="White")
-            SHOP_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Rects/Quit Rect.png"), pos=(640, 470),
-                                 text_input="SHOP", font=self.get_font(75), base_color="#d7fcd4", hovering_color="White")
-            QUIT_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Rects/Quit Rect.png"), pos=(640, 550),
-                                text_input="QUIT", font=self.get_font(75), base_color="#d7fcd4", hovering_color="White")
+            PLAY_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Green_button.png"), pos=(640, 300),
+                                text_input="PLAY", font=self.get_font(50), base_color="#ffffff", hovering_color="#0f4302")
+            OPTIONS_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Config_button.png"), pos=(60, 60),
+                                    text_input="", font=self.get_font(50), base_color="#ffffff", hovering_color="Green")
+            SHOP_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Yellow_button.png"), pos=(640, 450),
+                                 text_input="SHOP", font=self.get_font(50), base_color="#efa40f", hovering_color="#b57b08")
+            QUIT_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Red_button.png"), pos=(640, 600),
+                                text_input="QUIT", font=self.get_font(50), base_color="#ffffff", hovering_color="#590a0a")
 
             self.SCREEN.blit(MENU_TEXT, MENU_RECT)
 

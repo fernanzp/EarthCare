@@ -5,13 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/menu_easy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu_hard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opciones_play.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Beach/Beach_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/City/city_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose/Victory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Config_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Red_button_big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Red_button_bigm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Yellow_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Yellow_button_big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/City_tile0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/City_tile1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/Sand_tile0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/Sand_tile1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/sfx/Victory_defeat/defeat.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/sfx/Victory_defeat/victory.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/sfx/beach_level_sound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chng_character.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/language.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sound.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/victory_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/City/Background_city.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/City/Background_city.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Forest/Background_forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Forest/Background_forest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Menu/Menu_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Menu/Menu_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose/Win.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beach_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beach_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/city_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/city_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/city_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/city_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defeat.py" beforeDir="false" afterPath="$PROJECT_DIR$/defeat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_hard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opciones_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/opciones_play.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/options.py" beforeDir="false" afterPath="$PROJECT_DIR$/options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +78,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "ee4a1d6e",
-    "last_opened_file_path": "/home/fernanzp/PycharmProjects/menu2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;8763bbf4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fernanzp/Descargas/EarthCare&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/City" />
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Counters" />
-      <recent name="$PROJECT_DIR$/Resourses/Buttons" />
-      <recent name="$PROJECT_DIR$/Resourses/Titles" />
+      <recent name="$PROJECT_DIR$/Resourses/sfx/Victory_defeat" />
+      <recent name="$PROJECT_DIR$/Resourses/sfx" />
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Beach" />
       <recent name="$PROJECT_DIR$/Resourses/Tiles" />
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Resourses/Buttons" />
@@ -70,6 +103,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="forest_hard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EarthCare" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/forest_hard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EarthCare" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,27 +138,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="menu_easy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="EarthCare" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menu_easy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +167,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="options" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sound" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EarthCare" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,7 +179,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/options.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sound.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +188,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="victory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="victory_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EarthCare" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,12 +196,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/victory.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/victory_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,10 +212,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.victory_2" />
+        <item itemvalue="Python.forest_hard" />
+        <item itemvalue="Python.sound" />
         <item itemvalue="Python.opciones_play" />
-        <item itemvalue="Python.menu_easy" />
-        <item itemvalue="Python.options" />
-        <item itemvalue="Python.victory" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699226166736</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Menu game and level1">
+      <option name="closed" value="true" />
+      <created>1700066907905</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700066907906</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -246,6 +286,7 @@
     <MESSAGE value="commit to be able to return to a previous commit" />
     <MESSAGE value="Fix an error" />
     <MESSAGE value="Add buttons and the second level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add buttons and the second level" />
+    <MESSAGE value="Menu game and level1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu game and level1" />
   </component>
 </project>

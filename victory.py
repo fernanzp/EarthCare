@@ -1,14 +1,17 @@
 import pygame
+from buttons import Button
 
 class VictoryScreen:
     def __init__(self, display_surface, weight, height, organic, glass, metal, paper):
         self.display_surface = display_surface
-        self.background = pygame.image.load('Resourses/Backgrounds/Win_lose/Win.png').convert()
+        self.SCREEN = pygame.display.set_mode((1280, 720))
+        self.background = pygame.image.load('Resourses/Backgrounds/Win_lose/Victory.png').convert()
         self.background = pygame.transform.scale(self.background, (weight, height))
         self.organic = organic
         self.glass = glass
         self.metal = metal
         self.paper = paper
+        self.button_pressed = None
         center_x = weight // 2
         center_y = height // 2
 
@@ -17,7 +20,7 @@ class VictoryScreen:
         self.victory_title = pygame.image.load('Resourses/Titles/Victory_title.png').convert_alpha()
 
         #Buttons
-        self.menu_button = pygame.image.load('Resourses/Buttons/Menu_button.png').convert_alpha()
+        #self.menu_button = pygame.image.load('Resourses/Buttons/Menu_button.png').convert_alpha()
 
     def get_font(self, size):
         return pygame.font.Font("../EarthCare/Resourses/Fonts/font.ttf", size)
@@ -32,11 +35,30 @@ class VictoryScreen:
             #Background
             self.display_surface.blit(self.background, (0, 0))
 
+            MENU_MOUSE_POS = pygame.mouse.get_pos()
+
             #Titles
             self.display_surface.blit(self.victory_title, (55, 201))
 
             #Buttons
-            self.display_surface.blit(self.menu_button, (800, 572))
+            next_button = Button(image=pygame.image.load('Resourses/Buttons/Yellow_button.png'), pos=(240, 634),
+                                  text_input="NEXT", font=self.get_font(40), base_color="#efa40f",
+                                  hovering_color="#b57b08")
+            menu_button = Button(image=pygame.image.load('Resourses/Buttons/Yellow_button.png'), pos=(1030, 634),
+                                 text_input="MENU", font=self.get_font(40), base_color="#efa40f",
+                                 hovering_color="#b57b08")
+
+            for button in [next_button, menu_button]:
+                button.changeColor(MENU_MOUSE_POS)
+                button.update(self.SCREEN)
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if next_button.checkForInput(MENU_MOUSE_POS):
+                    self.button_pressed = "next"
+                    return
+                if menu_button.checkForInput(MENU_MOUSE_POS):
+                    self.button_pressed = "menu"
+                    return
 
             font = pygame.font.Font(None, 46)
             ancho_del_contador, alto_del_contador = font.size("Organic: 10")
