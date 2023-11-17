@@ -5,45 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Beach/Beach_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/City/city_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose/Victory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Config_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Red_button_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Red_button_bigm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Yellow_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Buttons/Yellow_button_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/City_tile0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/City_tile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/Sand_tile0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Tiles/Sand_tile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/sfx/Victory_defeat/defeat.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/sfx/Victory_defeat/victory.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/sfx/beach_level_sound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chng_character.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/language.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sound.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/victory_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Score/Score_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Titles/EarthCare_title.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/City/Background_city.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/City/Background_city.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Forest/Background_forest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Forest/Background_forest.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Menu/Menu_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Menu/Menu_background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Win_lose/Win.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beach_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beach_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_hard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/city_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/city_easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/city_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/city_hard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/defeat.py" beforeDir="false" afterPath="$PROJECT_DIR$/defeat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forest_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forest_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_hard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_hard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opciones_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/opciones_play.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/options.py" beforeDir="false" afterPath="$PROJECT_DIR$/options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/tiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,21 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;8763bbf4&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fernanzp/Descargas/EarthCare&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "ceb081fc",
+    "last_opened_file_path": "/home/fernanzp/PycharmProjects/EarthCare/Resourses/Backgrounds/Score"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Score" />
+      <recent name="$PROJECT_DIR$/Resourses/Titles" />
       <recent name="$PROJECT_DIR$/Resourses/sfx/Victory_defeat" />
       <recent name="$PROJECT_DIR$/Resourses/sfx" />
       <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Beach" />
-      <recent name="$PROJECT_DIR$/Resourses/Tiles" />
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Resourses/Buttons" />

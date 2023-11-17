@@ -19,6 +19,9 @@ class VictoryScreen:
         #Titles
         self.victory_title = pygame.image.load('Resourses/Titles/Victory_title.png').convert_alpha()
 
+        #Score victory
+        self.score_background = pygame.image.load('Resourses/Backgrounds/Score/Score_background.png').convert_alpha()
+
         #Buttons
         #self.menu_button = pygame.image.load('Resourses/Buttons/Menu_button.png').convert_alpha()
 
@@ -68,10 +71,13 @@ class VictoryScreen:
             text_metal = self.get_font(18).render(f"Metal:{self.metal}", True, (255, 0, 0))
             text_paper = self.get_font(18).render(f"Paper:{self.paper}", True, (255, 255, 0))
 
-            self.display_surface.blit(text_organic, (x_counter, 370))
-            self.display_surface.blit(text_glass, (x_counter, 420))
-            self.display_surface.blit(text_metal, (x_counter, 470))
-            self.display_surface.blit(text_paper, (x_counter, 520))
+            # Score background
+            #self.display_surface.blit(self.score_background, (x_counter, 370))
+
+            self.display_surface.blit(text_organic, (x_counter, 420)) #50 50
+            self.display_surface.blit(text_glass, (x_counter, 470))
+            self.display_surface.blit(text_metal, (x_counter, 520))
+            self.display_surface.blit(text_paper, (x_counter, 570))
 
             pygame.display.flip()
 

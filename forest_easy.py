@@ -201,7 +201,7 @@ class Level_f_1:
                 self.paper += 1
 
         #Verify if the counter reaches 50
-        if self.trash_collected >= 50:
+        if self.trash_collected >= 5:
             self.victory_sound.play()
             self.reset()
             victory_screen = VictoryScreen(self.display_surface, weight, height, self.organic, self.glass, self.metal, self.paper)

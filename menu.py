@@ -9,6 +9,9 @@ class Menu:
         self.BG = pygame.image.load("../EarthCare/Resourses/Backgrounds/Menu/Menu_background.png")
         self.button_pressed = None
 
+        #Titles
+        self.menu_title = pygame.image.load('Resourses/Titles/EarthCare_title.png').convert_alpha()
+
     def get_font(self, size):
         return pygame.font.Font("../EarthCare/Resourses/Fonts/font.ttf", size)
 
@@ -398,19 +401,22 @@ class Menu:
 
             MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-            MENU_TEXT = self.get_font(100).render("MENU", True, "#b68f40")
-            MENU_RECT = MENU_TEXT.get_rect(center=(640, 100))
+            # Titles
+            self.SCREEN.blit(self.menu_title, (82, 75))
 
+            #MENU_TEXT = self.get_font(100).render("MENU", True, "#b68f40")
+            #MENU_RECT = MENU_TEXT.get_rect(center=(640, 100))
+#240
             PLAY_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Green_button.png"), pos=(640, 300),
                                 text_input="PLAY", font=self.get_font(50), base_color="#ffffff", hovering_color="#0f4302")
-            OPTIONS_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Config_button.png"), pos=(60, 60),
+            OPTIONS_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Config_button.png"), pos=(70, 250),
                                     text_input="", font=self.get_font(50), base_color="#ffffff", hovering_color="Green")
             SHOP_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Yellow_button.png"), pos=(640, 450),
                                  text_input="SHOP", font=self.get_font(50), base_color="#efa40f", hovering_color="#b57b08")
             QUIT_BUTTON = Button(image=pygame.image.load("../EarthCare/Resourses/Buttons/Red_button.png"), pos=(640, 600),
                                 text_input="QUIT", font=self.get_font(50), base_color="#ffffff", hovering_color="#590a0a")
 
-            self.SCREEN.blit(MENU_TEXT, MENU_RECT)
+            #self.SCREEN.blit(MENU_TEXT, MENU_RECT)
 
             for button in [PLAY_BUTTON, OPTIONS_BUTTON, SHOP_BUTTON, QUIT_BUTTON]:
                 button.changeColor(MENU_MOUSE_POS)
