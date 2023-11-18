@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Score/Score_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resourses/Titles/EarthCare_title.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forest_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_easy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Score/Score_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Score/Score_background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +45,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "ceb081fc",
+    "git-widget-placeholder": "b2445e7a",
     "last_opened_file_path": "/home/fernanzp/PycharmProjects/EarthCare/Resourses/Backgrounds/Score"
   }
 }]]></component>
