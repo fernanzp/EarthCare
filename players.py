@@ -18,7 +18,7 @@ class Players(pygame.sprite.Sprite):
         self.jump_speed = -14
 
         #player status
-        self.status = 'idle'
+        self.status = 'd'
         self.facing_right = True
         self.on_ground = False
         self.on_ceiling = False
@@ -87,6 +87,10 @@ class Players(pygame.sprite.Sprite):
             self.direction.x = 0
 
         if keys[pygame.K_SPACE] and self.on_ground:
+            self.jump()
+        if keys[pygame.K_w] and self.on_ground:
+            self.jump()
+        if keys[pygame.K_UP] and self.on_ground:
             self.jump()
 
     def get_status(self):

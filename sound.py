@@ -40,11 +40,11 @@ class Sound:
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if SOUND_BUTTON.checkForInput(MENU_MOUSE_POS):
-                        pygame.mixer.music.play(-1)
-                        pygame.mixer.music.set_volume(1.0)
+                        self.opc = "sound"
+                        return
                     if MUTE_SOUND.checkForInput(MENU_MOUSE_POS):
-                        pygame.mixer.music.stop()
-                        pygame.mixer.music.set_volume(0.0)
+                        self.opc = "mute"
+                        return
                     if BACK_BUTTON.checkForInput(MENU_MOUSE_POS):
                         self.opc = "back"
                         return

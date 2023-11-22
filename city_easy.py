@@ -7,6 +7,7 @@ from players import Players
 from trash import Trash
 from victory import VictoryScreen
 from defeat import DefeatScreen
+from sound import Sound
 
 class Level_c_1:
     def __init__(self, level_data, surface):
@@ -17,6 +18,7 @@ class Level_c_1:
         self.trash_collected = 0 #Contador
         self.victory = False
         self.opc = None
+        self.sound = Sound()
 
         #Counters by type
         self.organic = 0
@@ -207,6 +209,7 @@ class Level_c_1:
             victory_screen.run()
 
             self.opc = victory_screen.button_pressed
+            self.victory_sound.stop()
             return
 
         #Verify the collision between trash and tiles
@@ -226,6 +229,7 @@ class Level_c_1:
             defeat_screen.run()
 
             self.opc = defeat_screen.button_pressed
+            self.defeat_sound.stop()
             return
 
         #Trash collected counter

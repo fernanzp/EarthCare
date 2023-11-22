@@ -8,6 +8,7 @@ from beach_easy import Level_b_1
 from beach_hard import Level_b_2
 
 from menu import Menu
+from shop import Shop
 from opciones_play import OpcionesPlay
 from options import Options
 from menu_easy import Menu_easy
@@ -15,6 +16,11 @@ from menu_hard import Menu_hard
 from sound import Sound
 from language import Language
 from chng_character import Chng_character
+
+from organic import Organic
+from glass import Glass
+from metal import Metal
+from papel import Papel
 
 pygame.init()
 
@@ -31,11 +37,17 @@ beach_hard_ = Level_b_2(beach_map_hard, screen)
 menu = Menu()
 opciones_play = OpcionesPlay()
 options = Options()
+shop = Shop()
 menu_easy = Menu_easy()
 menu_hard = Menu_hard()
 sound = Sound()
 language = Language()
 chng_character = Chng_character()
+
+organic = Organic()
+glass = Glass()
+metal = Metal()
+papel = Papel()
 
 
 
@@ -61,8 +73,9 @@ while run:
         run = False
 
     if current_screen == "menu":
-        menu_sound.play(-1)
-        menu_sound.set_volume(0.5)
+        if sound.opc != "mute":
+            menu_sound.play(-1)
+            menu_sound.set_volume(0.5)
         menu.run()
 
         if menu.button_pressed == "play":
@@ -73,8 +86,21 @@ while run:
             current_screen = "options"
 
         elif menu.button_pressed == "shop":
-            pygame.quit()
-            sys.exit()
+            current_screen = "shop"
+
+    elif current_screen == "shop":
+        shop.run()
+        if shop.opc == "organic":
+            organic.run()
+        if shop.opc == "glass":
+            glass.run()
+        if shop.opc == "metal":
+            metal.run()
+        if shop.opc == "papel":
+            papel.run()
+        elif shop.opc == "back":
+            menu_sound.stop()
+            current_screen = "menu"
 
     elif current_screen == "opciones_play":
         opciones_play.run()
@@ -84,20 +110,23 @@ while run:
 
             if menu_easy.opc == "level1":
                 menu_sound.stop()
-                forest_sound.play(-1)
-                forest_sound.set_volume(0.5)
+                if sound.opc != "mute":
+                    forest_sound.play(-1)
+                    forest_sound.set_volume(0.5)
                 current_screen = "level1_easy"
 
             elif menu_easy.opc == "level2":
                 menu_sound.stop()
-                beach_sound.play(-1)
-                beach_sound.set_volume(0.5)
+                if sound.opc != "mute":
+                    beach_sound.play(-1)
+                    beach_sound.set_volume(0.5)
                 current_screen = "level2_easy"
 
             elif menu_easy.opc == "level3":
                 menu_sound.stop()
-                city_sound.play(-1)
-                city_sound.set_volume(0.5)
+                if sound.opc != "mute":
+                    city_sound.play(-1)
+                    city_sound.set_volume(0.5)
                 current_screen = "level3_easy"
 
             elif menu_easy.opc == "back":
@@ -108,20 +137,23 @@ while run:
 
             if menu_hard.opc == "level1":
                 menu_sound.stop()
-                forest_sound.play(-1)
-                forest_sound.set_volume(0.5)
+                if sound.opc != "mute":
+                    forest_sound.play(-1)
+                    forest_sound.set_volume(0.5)
                 current_screen = "level1_hard"
 
             elif menu_hard.opc == "level2":
                 menu_sound.stop()
-                beach_sound.play(-1)
-                beach_sound.set_volume(0.5)
+                if sound.opc != "mute":
+                    beach_sound.play(-1)
+                    beach_sound.set_volume(0.5)
                 current_screen = "level2_hard"
 
             elif menu_hard.opc == "level3":
                 menu_sound.stop()
-                city_sound.play(-1)
-                city_sound.set_volume(0.5)
+                if sound.opc != "mute":
+                    city_sound.play(-1)
+                    city_sound.set_volume(0.5)
                 current_screen = "level3_hard"
 
             elif menu_hard.opc == "back":
@@ -136,7 +168,9 @@ while run:
 
         if options.opc == "sound":
             sound.run()
-            if sound.opc == "back":
+            if sound.opc == "mute":
+                menu_sound.stop()
+            elif sound.opc == "back":
                 current_screen = "options"
         elif options.opc == "language":
             language.run()
@@ -159,6 +193,10 @@ while run:
             current_screen = "level1_easy"
         elif forest_easy_.opc == "next":
             current_screen = "level2_easy"
+            forest_sound.stop()
+            if sound.opc != "mute":
+                beach_sound.play(-1)
+                beach_sound.set_volume(0.5)
 
     elif current_screen == "level2_easy":
         beach_easy_.run()
@@ -170,8 +208,11 @@ while run:
             beach_easy_.opc = None
             current_screen = "level2_easy"
         elif beach_easy_.opc == "next":
-            beach_sound.stop()
             current_screen = "level3_easy"
+            beach_sound.stop()
+            if sound.opc != "mute":
+                city_sound.play(-1)
+                city_sound.set_volume(0.5)
 
     elif current_screen == "level3_easy":
         city_easy_.run()
@@ -193,8 +234,12 @@ while run:
             forest_hard_.opc = None
             current_screen = "level1_hard"
         elif forest_hard_.opc == "next":
-            forest_sound.stop()
             current_screen = "level2_hard"
+            forest_sound.stop()
+            if sound.opc != "mute":
+                beach_sound.play(-1)
+                beach_sound.set_volume(0.5)
+
     elif current_screen == "level2_hard":
         beach_hard_.run()
         if beach_hard_.opc == "menu":
@@ -205,8 +250,12 @@ while run:
             beach_hard_.opc = None
             current_screen = "level2_hard"
         elif beach_hard_.opc == "next":
-            beach_sound.stop()
             current_screen = "level3_hard"
+            beach_sound.stop()
+            if sound.opc != "mute":
+                city_sound.play(-1)
+                city_sound.set_volume(0.5)
+
     elif current_screen == "level3_hard":
         city_hard_.run()
         if city_hard_.opc == "menu":
@@ -219,3 +268,5 @@ while run:
 
     pygame.display.update()
     clock.tick(60)
+
+    #if sound.opc != "mute":

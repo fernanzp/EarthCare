@@ -5,8 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e4556b2-8e15-4f94-b08c-449d1b486431" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Resourses/Keys/Teclas_WAD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Keys/Teclas_flechas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Keys/tacla_space.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Books/Bluebookbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Books/Purplebookbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Books/Redbookbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Can/BluecanButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Can/PurpleCanButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Can/RedCanbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Category/Category1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Category/Category2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Category/Category3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Category/Category4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Glass/Bluebottlebutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Glass/Greenbottlebutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Glass/Yellowbottlebutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Organic/Applebutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Organic/Bananabutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resourses/Trash_shop/Organic/Cherrybutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/papel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EarthCare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EarthCare.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resourses/Backgrounds/Score/Score_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resourses/Backgrounds/Score/Score_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beach_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beach_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/beach_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/city_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/city_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/city_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/city_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players.py" beforeDir="false" afterPath="$PROJECT_DIR$/players.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound.py" beforeDir="false" afterPath="$PROJECT_DIR$/sound.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/victory.py" beforeDir="false" afterPath="$PROJECT_DIR$/victory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,17 +80,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b2445e7a",
-    "last_opened_file_path": "/home/fernanzp/PycharmProjects/EarthCare/Resourses/Backgrounds/Score"
+    "git-widget-placeholder": "d268341f",
+    "last_opened_file_path": "/home/fernanzp/PycharmProjects/EarthCare",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Resourses/Trash_shop" />
+      <recent name="$PROJECT_DIR$/Resourses/Keys" />
       <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Score" />
       <recent name="$PROJECT_DIR$/Resourses/Titles" />
-      <recent name="$PROJECT_DIR$/Resourses/sfx/Victory_defeat" />
-      <recent name="$PROJECT_DIR$/Resourses/sfx" />
-      <recent name="$PROJECT_DIR$/Resourses/Backgrounds/Beach" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Resourses/Buttons" />

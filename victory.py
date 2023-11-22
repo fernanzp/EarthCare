@@ -20,7 +20,7 @@ class VictoryScreen:
         self.victory_title = pygame.image.load('Resourses/Titles/Victory_title.png').convert_alpha()
 
         #Score victory
-        self.score_background = pygame.image.load('Resourses/Backgrounds/Score/Score_background_4a.png').convert_alpha()
+        self.score_background = pygame.image.load('Resourses/Backgrounds/Score/Score_background.png').convert_alpha()
 
         #Buttons
         #self.menu_button = pygame.image.load('Resourses/Buttons/Menu_button.png').convert_alpha()

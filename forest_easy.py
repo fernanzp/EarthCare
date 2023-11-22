@@ -1,12 +1,14 @@
 import pygame.mixer, sys, random
+import datetime
 
-import defeat
+import bd
 from tiles import Tile, Tile_1#, Flower_0
 from settings import tile_size, weight, height
 from players import Players
 from trash import Trash
 from victory import VictoryScreen
 from defeat import DefeatScreen
+from sound import Sound
 
 class Level_f_1:
     def __init__(self, level_data, surface):
@@ -18,6 +20,9 @@ class Level_f_1:
         self.victory = False
         self.opc = None
         self.victory_sound = None
+        self.sound = Sound()
+        #self.last_keys_display_time = pygame.time.get_ticks()
+        #self.keys_duration = 5000
 
         #Counters by type
         self.organic = 0
@@ -43,6 +48,11 @@ class Level_f_1:
         for x in range(8):
             trash = Trash()
             self.trash_group.add(trash)
+
+        #Keys
+        self.keys_WAD = pygame.image.load('Resourses/Keys/Teclas_WAD.png').convert_alpha()
+        self.keys_arrows = pygame.image.load('Resourses/Keys/Teclas_flechas.png').convert_alpha()
+        self.key_space = pygame.image.load('Resourses/Keys/tacla_space.png').convert_alpha()
 
         #Sounds
         self.victory_sound = pygame.mixer.Sound('Resourses/sfx/Victory_defeat/victory.wav')
@@ -169,6 +179,18 @@ class Level_f_1:
         self.vertical_movement_collision()
         self.player.draw(self.display_surface)
 
+        #Keys
+        #current_time = pygame.time.get_ticks()
+        #if current_time - self.last_keys_display_time >= self.keys_duration:
+        #    self.keys_visible = False
+        #else:
+        #    self.keys_visible = True
+
+        #if self.keys_visible:
+        self.display_surface.blit(self.keys_WAD, (65, 575))
+        self.display_surface.blit(self.keys_arrows, (1079, 575))
+        self.display_surface.blit(self.key_space, (555, 675))
+
         #Time
         current_time = pygame.time.get_ticks()
         random_interval = random.randint(self.trash_spawn_inverval_min, self.trash_spawn_inverval_max)
@@ -204,10 +226,13 @@ class Level_f_1:
         if self.trash_collected >= 5:
             self.victory_sound.play()
             self.reset()
+            bd.insert_data('player', self.organic, self.glass, self.metal, self.paper)
+            bd.select_data('player')
             victory_screen = VictoryScreen(self.display_surface, weight, height, self.organic, self.glass, self.metal, self.paper)
             victory_screen.run()
 
             self.opc = victory_screen.button_pressed
+            self.victory_sound.stop()
             return
 
         #Verify the collision between trash and tiles
@@ -219,20 +244,23 @@ class Level_f_1:
             if any(tile.rect.colliderect(trash.rect) for tile in tile_list):
                 trash_on_floor += 1
 
-        #If there are at least 55 trash on the ground, close the game
-        if trash_on_floor >= 55:
+        #If there are at least 60 trash on the ground, close the game
+        if trash_on_floor >= 60:
             self.defeat_sound.play()
             self.reset()
             defeat_screen = DefeatScreen(self.display_surface, weight, height)
             defeat_screen.run()
 
             self.opc = defeat_screen.button_pressed
+            self.defeat_sound.stop()
             return
 
         #Trash collected counter
         text_trash_collected = self.get_font(18).render(f"{self.trash_collected}/50",True, (255,255,255))
         #Trash on the ground counter
-        text_trash_on_ground = self.get_font(18).render(f"{trash_on_floor}/55", True, (255,255,255))
+        text_trash_on_ground = self.get_font(18).render(f"{trash_on_floor}/60", True, (255,255,255))
 
         self.display_surface.blit(text_trash_collected, (15, 21))
         self.display_surface.blit(text_trash_on_ground, (1175, 21))
+
+        #self.last_keys_display_time = current_time
